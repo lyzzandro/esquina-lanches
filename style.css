@@ -235,8 +235,11 @@ footer p{
 }
 
 @media (max-width: 1200px){
+
+    ul{
+        display: none;
+    }
     .pedido{
-        border: 1px solid red;
         flex-direction: column;
         text-align: center; 
     }
@@ -244,7 +247,6 @@ footer p{
     .textos{
         display: flex;
         flex-direction: column;
-        border: 1px solid red;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -255,16 +257,36 @@ footer p{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
     }
     
     .buttons a{
         margin: 0 25px 0 25px;
-        border: 1px solid red;
     }
     
     .imagem{
         margin: 50px 0 0 0;
         width: 100%;
+    }
+
+    .imagem img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px){
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    .pedido p{
+        font-size: 1.4em;
+    }
+
+    h3{
+        font-size: 2em;
     }
 }
