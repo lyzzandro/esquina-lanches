@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Archivo', sans-serif;*/
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    position: fixed;
+    background: #ffffff;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 10px rgba(255, 0, 0, 0.1);
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding: 0 0 0 40px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+}
+
+a{
+    color: #BA1F3E;
+}
+
+a:hover{
+    text-decoration: underline  2px;
+    color: #BA1F3E;
+}
+
+header{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav header img{
+    height: 10vh;
+}
+
+main{
+    width: 100%;
+}
+
+h1{
+    font-size: 8em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    width: 60%;
+    margin: 0 0 0 10%;
+}
+
+h2{
+    font-size: 5em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 900;
+    color: #524949;
+}
+
+.pedido p{
+    margin: 30px 0 0 0;
+    font-size: 1.8em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    color: #524949;
+}
+
+.inicio{
+    background: linear-gradient(0deg, rgba(134, 5, 5, 0.38), rgba(134, 5, 5, 0.38)), url(imagens/getulio-moraes-Wz3u9_GtkWc-unsplash.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.pedido{
+    margin: 50px auto 50px auto;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.textos{
+    width: 50%;
+    height: 100%;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.imagem img{
+    width: 100%;
+}
+
+.buttons{
+    width: 50%;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 5em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.hamburguer{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(134, 5, 5, 0.38), rgba(134, 5, 5, 0.38)), url(imagens/mafe-estudio-LV2p9Utbkbw-unsplash.jpg) center top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sorvetes{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(134, 5, 5, 0.38), rgba(134, 5, 5, 0.38)), url(imagens/bryn-beatson-YIrLhY5qsQE-unsplash.jpg) center top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bebidas{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(134, 5, 5, 0.38), rgba(134, 5, 5, 0.38)), url(imagens/pexels-josh-sorenson-990439.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+
+footer{ 
+    height: 30vh;
+    background: #BA1F3E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    padding: 10px 0 0 0;
+    font-size: 1.2em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.icons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons img:hover{
+    filter: invert(45%) sepia(7%) saturate(5400%) hue-rotate(313deg) brightness(115%) contrast(105%);
+}
