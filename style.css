@@ -13,16 +13,16 @@
 
 body::-webkit-scrollbar {
     width: 12px;
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: rgb(235, 235, 235);
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: #be3600;
     border: 3px solid rgb(235, 235, 235);
-  }
+}
 
 nav{
     position: fixed;
@@ -43,6 +43,7 @@ li{
     padding: 0 0 0 40px;
     font-family: 'Archivo', sans-serif;
     font-weight: 800;
+    color: #BA1F3E;
 }
 
 a{
@@ -219,7 +220,6 @@ footer p{
     filter: invert(45%) sepia(7%) saturate(5400%) hue-rotate(313deg) brightness(115%) contrast(105%);
 }
 
-
 @media (max-width: 1400px){
     h1{
         font-size: 6em;
@@ -234,11 +234,77 @@ footer p{
     }
 }
 
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 3px;
+    background-color: #BA1F3E;
+    margin: 8px;
+    transition: 0.3s;
+}
+
 @media (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .mobile-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    li{
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    .nav-list{       
+        display: flex;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 100vw;
+        height: 90vh;
+        background:#BA1F3E ;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li a{
+        color: #fff;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 
     ul{
         display: none;
     }
+    
     .pedido{
         flex-direction: column;
         text-align: center; 
@@ -249,9 +315,9 @@ footer p{
         flex-direction: column;
         width: 100%;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;   
     }
+
     .buttons{
         width: 350px;
         display: flex;
@@ -289,4 +355,16 @@ footer p{
     h3{
         font-size: 2em;
     }
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 10px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -8px);
 }
